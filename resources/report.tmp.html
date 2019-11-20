@@ -9,4 +9,7 @@
   <body>
     {{body}}
   </body>
+  <script>
+    Array.from(document.getElementsByClassName('klab-fetch')).forEach((x) => x.innerHTML = x.innerHTML.replace('http://dapp.ci', window.location.origin))
+  </script>
 </html>
